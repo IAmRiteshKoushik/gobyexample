@@ -10,7 +10,7 @@ func slicey(){
     var s []string 
     fmt.Println("unint:", s, s == nil, len(s) == 0)
 
-    // Empty slice with length 3 and capacity 3
+    // Empty slice with length 3 and capacity 3 even though cap is not specified
     s = make([]string, 3)
     fmt.Println("emp:", s, "len: ", len(s), "cap: ", cap(s))
 

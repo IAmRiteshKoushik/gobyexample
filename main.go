@@ -24,5 +24,8 @@ func main(){
     // arrayEx()
 
     // 8. Slices
-    slicey()
+    // slicey()
+
+    // 9. Maps
+    mapEx()
 }
