@@ -27,5 +27,8 @@ func main(){
     // slicey()
 
     // 9. Maps
-    mapEx()
+    // mapEx()
+
+    // 10. Range
+    rangeEx()
 }
