@@ -1,6 +1,20 @@
 package main
 
+import (
+	"encoding/binary"
+	"fmt"
+)
+
 func main(){
+
+    data := []byte{1, 2}
+    fmt.Println(data)
+    binary.LittleEndian.PutUint16(data, 1)
+    fmt.Println(data)
+    fmt.Println(binary.LittleEndian.Uint16(data))
+    // fmt.Println(byte(1))
+    // fmt.Println(byte(1 >> 8))
+    // fmt.Println("%T", binary.LittleEndian.Uint16(data))
 
     // 1. Hello World
     // helloWorld()
@@ -39,16 +53,19 @@ func main(){
     // variadic()
 
     // 13. Closures
-    closure() 
+    // closure() 
 
     // 14. Recursion
-
+    // recursion()
 
     // 15. Pointers
+    // pointers()
 
     // 16. Strings and Runes
+    // stringNRunes()
 
     // 17. Structs
+    // structs()
 
     // 18. Methods
 
@@ -97,33 +114,44 @@ func main(){
     // 40. Stateful Goroutines
 
     // 41. Sorting
-    
+    // sortIt() 
+
     // 42. Sorting by Functions
+    // sortByFunc()
 
     // 43. Panic
+    // panicC()
 
     // 44. Defer
+    // BegToDefer() 
 
     // 45. Recover
+    // LetsRecover() 
 
     // 46. String Functions
+    // stringF()
 
     // 47. String Formatting
 
     // 48. Text Templates
    
     // 49. Regular expressions
+    // RegexCheck()
 
     // 50. JSON
+    // jsonEx()
 
     // 51. XML
 
     // 52. Time 
+    // timeTrial()
 
     // 53. Epoch
+    // epoch()
 
     // 54. Time Formatting / Parsing
-   
+    // timeParse()  
+
     // 55. Random Numbers
 
     // 56. Number Parsing
@@ -131,8 +159,10 @@ func main(){
     // 59. URL Parsing
 
     // 60. SHA256 Hashes
+    // shasha()
 
     // 61. Base64 Encoding
+    // baseAndURLEnc()
 
     // 62. Reading files
 
@@ -173,5 +203,8 @@ func main(){
     // 81. Signals
 
     // 82. Exit
+    // exitProg()
 
+    // Misc
+    // misc1()
 }
